@@ -1,2 +1,2 @@
 # Atividades-Aula
-Atividades Aulas - Tec.ADS - Senac RS
+Atividades Aulas - Técnico ADS - Senac RS
