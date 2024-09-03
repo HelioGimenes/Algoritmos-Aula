@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculadora</title>
+    <img src="calculadora.png">
+
+</head>
+
+<body>
+    <h1> Página para Calcular </h1>
+    <form>
+        <p> Calculadora:
+            <input type="number" id="inNum" required>
+            <input type="number" id="inNum2" required>
+            <select id="opd">
+                <option value="+">Somar</option>
+                <option value="-">Subtrair</option>
+                <option value="*">Multiplicar</option>
+                <option value="/">Dividir</option>
+            </select>
+            <button onclick="calc()">Calcular</button>
+            <p id="resultado"></p>
+        </p>
+
+
+
+
+    </form>
+
+    <h3></h3>
+    <script src="calc.js"></script>
+</body>
+
+</html>
