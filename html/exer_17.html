@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+    const cigarroDia = Number(prompt("Quantos cigarros fuma por dia? "))
+    const anosFumando = Number(prompt("A quantos anos fuma? "))
+
+    const minCigarro = 10
+    const ano = 365
+    const horas = 24
+    const min = 60
+
+
+    const tempoPorDia = cigarroDia * minCigarro
+    const tempoPorAno = tempoPorDia * ano
+    const cigarroAno = tempoPorAno * anosFumando
+    const horasAno = cigarroAno / horas
+    const minAno = horasAno / min
+    const vidaPerdida = minAno
+
+
+    alert(`O Total de vida perdida foi de: ${vidaPerdida.toFixed()} Anos`)
+    console.log(`O Total de vida perdida foi de: ${vidaPerdida.toFixed()} Anos`)
+    console.log(tempoPorDia)
+    console.log(tempoPorAno)
+    console.log(cigarroAno)
+    console.log(horasAno)
+    console.log(minAno)
+
+</script>

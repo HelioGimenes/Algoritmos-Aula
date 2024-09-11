@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+
+    let ht = Number(prompt("Horas trabalhadas mês: "))
+    let vh = Number(prompt("Valor hora trabalhada: "))
+
+    let PD = 15 / 100
+    let SB = ht * vh
+    let TD = (PD * SB)
+    let SL = SB - TD
+
+    alert(`Horas trabalhadas: ${ht}hr, salário bruto R$${SB.toFixed(2)}, desconto R$${TD.toFixed(2)} e salário liquido R$${SL.toFixed(2)}`)
+    console.log(`Horas trabalhadas: ${ht}hr, salário bruto R$${SB.toFixed(2)}, desconto R$${TD.toFixed(2)} e salário liquido R$${SL.toFixed(2)}`)
+
+
+
+
+</script>

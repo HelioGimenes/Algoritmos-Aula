@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+    const km = Number(prompt("Quantos KMs foram percorridos: "))
+    const diasAluguel = Number(prompt("Quantos dias o carro foi alugado: "))
+
+    const valorDia = 90
+    const kmRodado = 0.20
+
+    const valorDiaPagar = (valorDia * diasAluguel)
+    const kmApagar = (km * kmRodado)
+
+    const totalApagar = (valorDiaPagar + kmApagar)
+
+
+
+
+    alert(`O Valor total a pagar é de R$ ${totalApagar.toFixed(2)}`)
+    console.log(`O Valor total a pagar é de R$ ${totalApagar.toFixed(2)}`)
+
+</script>
