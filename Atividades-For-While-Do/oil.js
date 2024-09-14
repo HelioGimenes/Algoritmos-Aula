@@ -1,19 +1,36 @@
-const prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")();
 
-do {
-    let opcoes = Number(prompt(`(1).Álcool - (2).Gasolina - (3).Diesel - (4).Fim: `));
-    
+let alcool = 0;
+let gasolina = 0;
+let diesel = 0;
+let codigo;
 
-    if (opcoes === 4) {
-        console.log(`Muito Obrigado`);
-        console.log ("1")
-        console.log ("2")
-        console.log ("3")
+while (true) {
+    codigo = parseInt(prompt("Informe o tipo de combustível (1.Álcool, 2.Gasolina, 3.Diesel, 4.Fim): "));
+
+    if (codigo === 4) {
+        console.log("MUITO OBRIGADO");
+        console.log(`Álcool: ${alcool}`);
+        console.log(`Gasolina: ${gasolina}`);
+        console.log(`Diesel: ${diesel}`);
         break;
     }
 
-    else if (opcoes !== 1 && opcoes !== 2 && opcoes !== 3 && opcoes !== 4) {
-        console.log("Opção inválida, (1).Álcool - (2).Gasolina - (3).Diesel - (4).Fim .")
+    switch (codigo) {
+        case 1:
+            alcool++;
+            console.log("Você escolheu: Álcool");
+            break;
+        case 2:
+            gasolina++;
+            console.log("Você escolheu: Gasolina");
+            break;
+        case 3:
+            diesel++;
+            console.log("Você escolheu: Diesel");
+            break;
+        default:
+            console.log("Código inválido. Tente novamente.");
+            break;
     }
-
-} while (true)
+}
