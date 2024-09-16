@@ -1,22 +1,12 @@
 const prompt = require("prompt-sync")()
 
-let cor = prompt("Coloque a cor(azul,vermelho,amarelo,verde,preto,branco): ")
-let cores = ["azul","vermelho","amarelo","verde","preto","branco"]
+const cor = prompt("Insira uma Cor: ")
+let cores = ["vermelho", "roxo", "preto"];
 
-let mostrar = (cores.indexOf(cor))
+if (!cores.includes(cor)) {
+    console.log("Cor não encontrada.")
 
-if (mostrar !== -1){
-    console.log(`A cor escolhida foi ${cor} e a posição é ${mostrar}`)
-    
 }
-else{
-    console.log(`Cor nao encontrada.`)
+else {
+    console.log(`A cor escolhida foi:${cor}`)
 }
-
-
-
-
-
-
-
-
